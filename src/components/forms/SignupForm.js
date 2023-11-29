@@ -14,7 +14,7 @@ export default function LoginForm({ navigation }) {
         placeholder="Email"
         label="Email"
         style={{ marginTop: 10 }}
-        error={true}
+        
       />
       <TextInput
         mode="outlined"
@@ -42,13 +42,14 @@ export default function LoginForm({ navigation }) {
         }
         style={{ marginTop: 10 }}
       />
-      <Button icon="account-plus" mode="contained" style={{ marginTop: 10 }}>
+      <Button icon="account-plus" mode="contained" buttonColor="rgba(255, 106, 0, 0.8)" style={{ marginTop: 10}}>
         Register
       </Button>
       <Button
         onPress={() => navigation.pop()}
         icon="arrow-left"
         mode="contained"
+        
         style={{ marginTop: 10 }}
       >
         Go Back

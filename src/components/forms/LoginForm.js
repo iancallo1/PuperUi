@@ -19,7 +19,7 @@ export default function LoginForm({ navigation }) {
         placeholder="Email"
         label="Email"
         style={{ marginTop: 10 }}
-        error={true}
+        
       />
       <TextInput
         mode="outlined"
@@ -37,6 +37,7 @@ export default function LoginForm({ navigation }) {
       <Button 
       onPress={() => navigation.navigate("Home") }
       icon="login" 
+      buttonColor="rgba(0, 128, 255, 0.8)"
       mode="contained" 
       style={{ marginTop: 10 }}
       
@@ -47,6 +48,7 @@ export default function LoginForm({ navigation }) {
       <Button
         onPress={() => navigation.navigate("Register")}
         icon="account-plus"
+        buttonColor="rgba(255, 106, 0, 0.8)" 
         mode="contained"
         style={{ marginTop: 10 }}
       >
